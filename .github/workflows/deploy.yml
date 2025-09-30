@@ -19,7 +19,7 @@ jobs:
           server: ${{ secrets.SFTP_HOST }}
           port: ${{ secrets.SFTP_PORT || 22 }}
           username: ${{ secrets.SFTP_USER }}
-          password: ${{ secrets.SFTP_PASSWORD }}
+          ssh_private_key: ${{ secrets.SFTP_PRIVATE_KEY }}
           local_path: ./ # what to upload (current repo files)
           remote_path: /sites/valeriefrancois.fr
           sftp_only: true
