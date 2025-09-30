@@ -1,0 +1,25 @@
+name: Deploy to SFTP
+
+on:
+  push:
+    branches:
+      - master   # run only when master is updated
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy via SFTP
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+          server: ${{ secrets.SFTP_HOST }}
+          port: ${{ secrets.SFTP_PORT || 22 }}
+          username: ${{ secrets.SFTP_USER }}
+          password: ${{ secrets.SFTP_PASSWORD }}
+          local_path: ./   # what to upload (current repo files)
+          remote_path: /path/on/your/server  # adjust to your hosting directory
+          sftp_only: true
