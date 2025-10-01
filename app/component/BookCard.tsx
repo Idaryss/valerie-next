@@ -13,11 +13,11 @@ const BookCard: React.FC<{ book: Book; onCardClick: (book: Book) => void }> = ({
     tabIndex={0}
     aria-label={`Voir les détails pour ${book.title}`}
   >
-    <div className="relative">
+    <div className="relative flex items-center justify-center h-72 bg-gray-100 overflow-hidden">
       <img
         src={book.coverImageUrl}
         alt={`Couverture de ${book.title}`}
-        className="w-full h-72 object-cover"
+        className="max-h-5/6 max-w-full object-contain"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-80 transition-opacity duration-300 flex items-end justify-center p-4">
         <span className="text-white text-lg font-semibold text-center pb-4">
