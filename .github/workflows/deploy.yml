@@ -23,3 +23,7 @@ jobs:
           local_path: ./ # what to upload (current repo files)
           remote_path: sites/valeriefrancois.fr
           sftp_only: true
+          exclude: |
+            **/.git*
+            **/.github*
+            **/node_modules*
