@@ -62,8 +62,8 @@ const ContactPage: React.FC = () => {
         Contactez-moi
       </h2>
       <p className="text-center text-gray-600 mb-10">
-        Pour toute question, proposition ou simplement pour échanger, n'hésitez
-        pas à utiliser le formulaire ci-dessous.
+        Pour toute question, proposition ou simplement l’envie pour échanger,
+        n'hésitez pas à utiliser le formulaire ci-dessous.
       </p>
 
       <form onSubmit={handleSubmit} noValidate>
@@ -101,7 +101,7 @@ const ContactPage: React.FC = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                placeholder="votre.email@example.com"
+                placeholder="votre.email@exemple.com"
                 className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-gray-800 focus:border-gray-800 transition bg-white text-gray-900 placeholder:text-gray-400"
               />
             </div>
