@@ -24,6 +24,9 @@ jobs:
           remote_path: sites/valeriefrancois.fr
           sftp_only: true
           exclude: |
-            **/.git*
-            **/.github*
-            **/node_modules*
+            .git*
+            .git/**
+            .github*
+            .github/**
+            node_modules*
+            node_modules/**
