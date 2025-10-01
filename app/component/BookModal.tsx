@@ -42,7 +42,7 @@ const BookModal: React.FC<{ book: Book; onClose: () => void }> = ({
           <img
             src={book.coverImageUrl}
             alt={`Couverture de ${book.title}`}
-            className="w-full h-full object-contain"
+            className="w-full max-h-60 md:max-h-none object-contain"
           />
         </div>
         <div className="w-full md:w-2/3 p-6 md:p-8 flex flex-col overflow-y-auto">
