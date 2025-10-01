@@ -62,7 +62,7 @@ const ContactPage: React.FC = () => {
         Contactez-moi
       </h2>
       <p className="text-center text-gray-600 mb-10">
-        Pour toute question, proposition ou simplement l’envie pour échanger,
+        Pour toute question, proposition ou simplement l’envie d’échanger,
         n'hésitez pas à utiliser le formulaire ci-dessous.
       </p>
 
