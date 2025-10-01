@@ -33,7 +33,7 @@ export default function RootLayout({
       <body
         className={`${playfairDisplay.variable} ${lato.variable} font-sans`}
       >
-        <div className="min-h-screen bg-[#D6B3B3] text-gray-800 flex flex-col">
+        <div className="min-h-screen bg-gray-50 text-gray-800 flex flex-col">
           <Navbar authorName={AUTHOR_NAME} />
           <main className="flex-grow">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16">
