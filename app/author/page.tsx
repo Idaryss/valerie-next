@@ -10,7 +10,7 @@ const AuthorPage: React.FC = () => {
       <div className="flex flex-col md:flex-row items-start gap-8 md:gap-12">
         <div className="md:w-1/3 flex-shrink-0">
           <img
-            src="/valerie-photo.png"
+            src="/valerie-photo.JPEG"
             alt={`Portrait de ${AUTHOR_NAME}`}
             className="rounded-lg shadow-lg w-full object-cover"
           />

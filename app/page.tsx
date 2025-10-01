@@ -44,7 +44,7 @@ const Home: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div className="md:w-1/3 w-full flex-shrink-0">
             <img
-              src="/valerie-photo.png"
+              src="/valerie-photo.JPEG"
               alt={`Portrait de ${AUTHOR_NAME}`}
               className="rounded-lg shadow-xl w-full h-auto object-cover"
             />
